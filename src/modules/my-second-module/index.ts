@@ -11,7 +11,7 @@ export const mySecondModule = new GraphQLModule({
   typeDefs: typeDefs,
   resolvers: resolvers,
   providers: [TestProvider],
-  resolversComposition: {
-    'Query.myQuery': [isAuthenticated(), hasRole('EDITOR')]
-  }
+  // resolversComposition: {
+  //   'Query.myQuery': [isAuthenticated(), hasRole('EDITOR')]
+  // }
 });
