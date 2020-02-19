@@ -1,4 +1,5 @@
-import 'graphql-import-node';
+import "graphql-import-node";
+import "reflect-metadata";
 import express from "express";
 import graphqlHTTP from "express-graphql";
 import { schema } from "./schema";
