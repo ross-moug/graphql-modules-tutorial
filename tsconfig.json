@@ -5,10 +5,14 @@
         "allowSyntheticDefaultImports": true,
         "experimentalDecorators": true,
         "target": "es6",
-        "noImplicitAny": true,
+        "lib": ["es6", "esnext", "es2015"],
+        "noImplicitAny": false,
         "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
         "sourceMap": true,
-        "outDir": "dist_server",
+        "declaration": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
         "baseUrl": ".",
         "paths": {
             "*": [
@@ -19,5 +23,7 @@
     },
     "include": [
         "src/**/*"
-    ]
+    ],
+    "files": ["src/index.ts"],
+    "exclude": ["node_modules"]
 }
