@@ -1,5 +1,5 @@
 import { ModuleContext } from "@graphql-modules/core";
-import { IMyFirstModuleContext } from "./index";
+import { IMyFirstModuleContext } from "./my-first.module";
 import { UserProvider } from "./user.provider";
 
 export default {
