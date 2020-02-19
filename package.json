@@ -4,13 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scripts": {
-      "build": "tsc",
-      "debug": "nodemon --exec ts-node -r tsconfig-paths/register --inspect --debug-brk src/schema.ts",
-      "dev": "nodemon --exec ts-node -r tsconfig-paths/register src/main.ts",
-      "start": "node dist/index.js",
-      "test": "jest"
-    }
+    "build": "tsc",
+    "debug": "nodemon --exec ts-node -r tsconfig-paths/register --inspect --debug-brk src/schema.ts",
+    "dev": "nodemon --exec ts-node -r tsconfig-paths/register src/main.ts",
+    "start": "node dist/index.js",
+    "test": "jest --config jest.config.js"
   },
   "keywords": [],
   "author": "",
@@ -38,19 +36,5 @@
     "ts-node": "^8.6.2",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.7.5"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
   }
 }
