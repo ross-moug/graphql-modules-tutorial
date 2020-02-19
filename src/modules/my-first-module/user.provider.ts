@@ -13,7 +13,7 @@ export class UserProvider {
   constructor(private testProvider: TestProvider) {
   }
 
-  getUserById(id) {
+  getUserById(id, myField) {
     return this.users.find(user => user._id === id);
   }
 }
